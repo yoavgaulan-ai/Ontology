@@ -62,6 +62,7 @@ def parse_input(raw_input):
 
 
 def create_query(index, relation, entity):
+    entity = entity.title()
     if index < 7:
         query = "SELECT ?p \
                 WHERE {\
